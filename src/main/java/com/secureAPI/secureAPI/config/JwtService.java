@@ -17,7 +17,7 @@ import java.util.function.Function;
 @Service
 public class JwtService {
 
-    private  static final String SECRET_KEY = "D479BC1C36FB3BD4A4B9FF8388CF9";
+    private  static final String SECRET_KEY = "4wX7yoZsRW8yRLqYaGRNUk4PAdKSWd8SXySGyE8yXgADJbu3j3g59HuKy5aBRKoZxzzhErY9ygZmrgkj45DEZJdYdHJnjWeZrCYfss9LR5qLBf3eXU3udk93pAgtE6Q3Dq3qZzrfz4gX2Csj9UQ6743zqSH36k3KdbH7j4SP4b9wkb6jYxXncn4ScZfbG3dfETtQjSU4NDksJq6pQjqXpKhxyx9af3t6ukLKGaLyFjdJdbU84oThBMf6ehZf36DC";
 
     public String generateToken( UserDetails userDetails ){
         return generateToken(new HashMap<>(), userDetails);
